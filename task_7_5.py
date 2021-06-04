@@ -1,7 +1,8 @@
 import os
 import json
 
-folder = r'C:/PyProjects/first/Gortalova_Natalia_dz_7'
+folder = os.getcwd()
+print(folder)
 folder_name = os.path.basename(folder)
 print(folder_name)
 folder_size_stat = {}
