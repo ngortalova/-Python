@@ -12,13 +12,13 @@ class Position(Worker):
 
     def get_full_name(self):
         self.full_name = f"{self.surname} {self.name}"
-        print(self.full_name)
+        return self.full_name
 
     def get_total_income(self):
         self.total_income = self._income["wage"] + self._income["bonus"]
-        print(self.total_income)
+        return self.total_income
 
 
 ivanov = Position("Ivan", "Ivanov", "hardworker", 1000, 12)
-ivanov.get_full_name()
-ivanov.get_total_income()
+print(ivanov.get_full_name())
+print(ivanov.get_total_income())
